@@ -1,0 +1,349 @@
+3D Modeling
+3D Rendering
+AJAX
+AOL Instant Messenger
+Accounting
+Administration
+Agile development tools
+Algorithms
+Analysis
+Animation
+Anti-Malware
+Anti-Spam
+Anti-Virus
+Application Servers
+Archiving
+Artificial Intelligence
+Assemblers
+Astronomy
+Authentication/Directory
+BBS
+BSD
+Backup
+Benchmark
+Billing
+Binary editors
+Bio-Informatics
+BitTorrent
+Blogging
+Board Games
+Boot
+Browsers
+Budgeting and Forecasting
+Build Tools
+Building Automation
+Business Intelligence
+Business Performance Management
+Business Process Management
+Business Service Management
+CASE
+CD Audio
+CD Playing
+CD Ripping
+CGI Tools/Libraries
+CMS Systems
+CORBA
+CRM
+CVS
+Calendar
+Capture
+Capture/Recording
+Card Games
+Cataloguing
+Chat
+Chemistry
+Clustering
+Code Generators
+Codec
+Collaborative development tools
+Collection management
+Comma-separated values (CSV)
+Communications
+Compilers
+Composition
+Compression
+Computer Aided Instruction (CAI)
+Computer Aided Translation (CAT)
+Computer-aided technologies (CADD/CAM/CAE)
+Conferencing
+Configuration Management Database (CMDB)
+Console-based Games
+Conversion
+Cron and scheduling
+Cross Compilers
+Cryptography
+DVD
+Data Formats
+Data Warehousing
+Data recovery
+Database
+Database Engines/Servers
+Debuggers
+Design
+Desktop Environment
+Desktop Publishing
+Digital Camera
+Digital preservation
+Direct Connect
+Display
+Distributed Computing
+DocBook
+Documentation
+Dynamic Content
+E-Commerce / Shopping
+ERP
+ETL
+Earth Sciences
+Ecosystem Sciences
+Editors
+Education
+Electronic Design Automation (EDA)
+Emacs
+Email
+Email Clients (MUA)
+Embedded systems
+Emulators
+Enlightenment
+Enterprise
+FIDO
+Fax
+File Management
+File Sharing
+File Transfer Protocol (FTP)
+Filesystems
+Filters
+Financial
+Finger
+Firewalls
+First Person Shooters
+Flight simulator
+Fonts
+Fractals and Procedural Generation
+Frameworks
+Front-Ends
+GIS
+GPS (Global Positioning System)
+Game development framework
+Games/Entertainment
+Genealogy
+Genetic Algorithms
+Gnome
+Gnutella
+Graphics
+Graphics Conversion
+Groupware
+HTML/XHTML
+HTTP Servers
+Ham Radio
+Hardware
+Hardware Drivers
+Hardware Watchdog
+History
+Hobbies
+Home Automation
+Home Theater PC
+Human Machine Interfaces
+Human Resources
+Humanitarianism
+I18N (Internationalization)
+ICQ
+IMAP
+Image Galleries
+Indexing/Search
+Information Analysis
+Init
+Installation/Setup
+Insurance
+Integrated Development Environments (IDE)
+Intelligent Agents
+Interface Engine/Protocol Translator
+Internet
+Internet Phone
+Internet Relay Chat
+Interpreters
+Investment
+JSON
+Jabber
+K Desktop Environment (KDE)
+Knowledge Management
+L10N (Localization)
+LDAP
+Languages
+Libraries
+Library
+Linguistics
+Link Checking
+Linux
+Live CD
+Log Analysis
+Log Rotation
+Logging
+MARC and Book/Library Metadata
+MIDI
+MMORPG
+MP3
+MSN Messenger
+Machine Learning
+Machine Translation
+Mail Transport Agents
+Mailing List Servers
+Mainframes
+Mapping
+Mathematics
+Mechanical and Civil Engineering
+Medical Physics
+Medical Science Apps.
+Medical/Healthcare
+Message Boards
+Metadata editors
+Mixers
+Mobile
+Modeling
+Modelling
+Molecular Mechanics
+Molecular Science
+Monitoring
+Multi-User Dungeons (MUD)
+Multimedia
+Multiplayer
+NIS
+NNTP
+Name Service (DNS)
+Napster
+Networking
+New Age
+Non-Linear Editor
+OLAP
+OPAC
+ORM (Object-relational mapping)
+OS distribution
+Object Brokering
+Object Oriented
+Office Suites
+Office/Business
+Operating System Kernels
+Other file transfer protocol
+Other/Nonlisted Topic
+POP3
+Packaging
+Page Counters
+Password manager
+Performance Testing
+Personal finance
+Physics
+Players
+Plugins and add-ons
+Point-Of-Sale
+Politics
+Post-Office
+Power (UPS)
+Presentation
+Printing
+Product lifecycle management (PLM)
+Profiling
+Project Management
+Psychology
+Puzzle Games
+Quality Assurance
+Quantum Computing
+RCS
+RSS
+RSS Feed Readers
+Raster-Based
+Real Time Strategy
+Real Time Tactical
+Realtime Processing
+Religion and Philosophy
+Report Generators
+Research
+Resource Booking
+Robotics
+Role-Playing
+Routing
+SCADA
+SCCS
+SOAP
+SSH (Secure SHell)
+Sales
+Scanners
+Scheduling
+Scientific/Engineering
+Screen Capture
+Screen Savers
+Search
+Security
+Semantic Web (RDF, OWL, etc.)
+Serial
+Service Automation
+Service Support
+Side-Scrolling/Arcade Games
+Simulation
+Simulations
+Site Management
+Social Bookmarking
+Social Networking
+Social sciences
+Software Development
+Software Distribution
+Sound Synthesis
+Sound/Audio
+Source code analysis
+Source code browsing
+Source code review
+Special Effects
+Speech
+Sports
+Spreadsheet
+Statistics
+Still Capture
+Storage
+Streaming
+Subversion
+Symmetric Multi-processing
+Synchronization
+System
+System Shells
+Systems Administration
+TeX/LaTeX
+Telephony
+Telnet
+Templates
+Terminal Emulators/X Terminals
+Terminals
+Test and Measurement
+Testing
+Text Editors
+Text Processing
+Themes
+Ticketing Systems
+Time Tracking
+To-Do Lists
+Turn Based Strategy
+UML
+Unattended
+Unix Talk
+Usability
+Usenet News
+User Interfaces
+Vector-Based
+Version Control
+Vi/Vim
+Video
+Video Capture
+Video Conferencing
+Viewers
+Virtual Machines
+Visualization
+VoIP
+Voting
+WAP
+WWW/HTTP
+Web Conferencing
+Web Services
+Wiki
+Window Managers
+Wireless
+Word Processors
+Workflow
+XML
+XML-RPC

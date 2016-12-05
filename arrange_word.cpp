@@ -30,9 +30,9 @@ int main(){
 		cout << "open valid_word.txt error!\n";
 		exit(1);
 	}
-	fout.open("fully_arranged_word.txt");
+	fout.open("clearly_arranged_word.txt");
 	if(!fout.good()){
-		cout << "open arranged_word.txt error!\n";
+		cout << "open clearly_arranged_word.txt error!\n";
 		exit(2);
 	}
 	int cnt_word = 0;
@@ -50,19 +50,19 @@ int main(){
 			flag[cnt] = 1;
 		}
 	}
-	fout << get_word[0].str 
-		 << ' ' << get_word[0].weight 
-		 << ' ' << get_word[0].offset;
+	fout << get_word[0].str;
+		 //<< ' ' << get_word[0].weight 
+		 //<< ' ' << get_word[0].offset;
  	for(int cnt_i = 1; cnt_i < cnt_word; ++ cnt_i){
 		if(!flag[cnt_i]){
-			fout << endl;
-			fout << get_word[cnt_i].str 
-			<< ' ' << get_word[cnt_i].weight 
-			<< ' ' << get_word[cnt_i].offset;
+			fout << ' ';
+			fout << get_word[cnt_i].str;
+			//<< ' ' << get_word[cnt_i].weight 
+			//<< ' ' << get_word[cnt_i].offset;
 		}
-		else fout << ' ' << get_word[cnt_i].offset;
+		//else fout << ' ' << get_word[cnt_i].offset;
 	}
-	fout << endl;
+	//fout << endl;
 	fin.close();
 	fout.close();
 	return 0;

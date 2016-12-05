@@ -306,10 +306,10 @@ _Z10quick_sortii:
 .LC1:
 	.ascii "open valid_word.txt error!\12\0"
 .LC2:
-	.ascii "fully_arranged_word.txt\0"
+	.ascii "clearly_arranged_word.txt\0"
 	.align 8
 .LC3:
-	.ascii "open arranged_word.txt error!\12\0"
+	.ascii "open clearly_arranged_word.txt error!\12\0"
 	.text
 	.globl	main
 	.def	main;	.scl	2;	.type	32;	.endef
@@ -320,12 +320,10 @@ main:
 	.seh_pushreg	%rbp
 	pushq	%rbx
 	.seh_pushreg	%rbx
-	subq	$72, %rsp
-	.seh_stackalloc	72
+	subq	$56, %rsp
+	.seh_stackalloc	56
 	leaq	128(%rsp), %rbp
 	.seh_setframe	%rbp, 128
-	movaps	%xmm6, -80(%rbp)
-	.seh_savexmm	%xmm6, 48
 	.seh_endprologue
 	call	__main
 	movl	$8, %r8d
@@ -497,25 +495,11 @@ main:
 	subl	$1, -88(%rbp)
 	jmp	.L24
 .L22:
-	movl	208+get_word(%rip), %ebx
-	movsd	200+get_word(%rip), %xmm6
 	leaq	get_word(%rip), %rdx
 	leaq	fout(%rip), %rcx
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
-	movl	$32, %edx
-	movq	%rax, %rcx
-	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c
-	movapd	%xmm6, %xmm1
-	movq	%rax, %rcx
-	call	_ZNSolsEd
-	movl	$32, %edx
-	movq	%rax, %rcx
-	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c
-	movl	%ebx, %edx
-	movq	%rax, %rcx
-	call	_ZNSolsEi
 	movl	$1, -92(%rbp)
-.L28:
+.L27:
 	movl	-92(%rbp), %eax
 	cmpl	-84(%rbp), %eax
 	jge	.L25
@@ -526,31 +510,9 @@ main:
 	xorl	$1, %eax
 	testb	%al, %al
 	je	.L26
-	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rdx
+	movl	$32, %edx
 	leaq	fout(%rip), %rcx
-	call	_ZNSolsEPFRSoS_E
-	movl	-92(%rbp), %eax
-	movslq	%eax, %rdx
-	movq	%rdx, %rax
-	addq	%rax, %rax
-	addq	%rdx, %rax
-	leaq	0(,%rax,8), %rdx
-	addq	%rdx, %rax
-	salq	$3, %rax
-	movq	%rax, %rdx
-	leaq	208+get_word(%rip), %rax
-	movl	(%rdx,%rax), %ebx
-	movl	-92(%rbp), %eax
-	movslq	%eax, %rdx
-	movq	%rdx, %rax
-	addq	%rax, %rax
-	addq	%rdx, %rax
-	leaq	0(,%rax,8), %rdx
-	addq	%rdx, %rax
-	salq	$3, %rax
-	movq	%rax, %rdx
-	leaq	200+get_word(%rip), %rax
-	movsd	(%rdx,%rax), %xmm6
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c
 	movl	-92(%rbp), %eax
 	movslq	%eax, %rdx
 	movq	%rdx, %rax
@@ -564,51 +526,16 @@ main:
 	movq	%rax, %rdx
 	leaq	fout(%rip), %rcx
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
-	movl	$32, %edx
-	movq	%rax, %rcx
-	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c
-	movapd	%xmm6, %xmm1
-	movq	%rax, %rcx
-	call	_ZNSolsEd
-	movl	$32, %edx
-	movq	%rax, %rcx
-	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c
-	movl	%ebx, %edx
-	movq	%rax, %rcx
-	call	_ZNSolsEi
-	jmp	.L27
 .L26:
-	movl	-92(%rbp), %eax
-	movslq	%eax, %rdx
-	movq	%rdx, %rax
-	addq	%rax, %rax
-	addq	%rdx, %rax
-	leaq	0(,%rax,8), %rdx
-	addq	%rdx, %rax
-	salq	$3, %rax
-	movq	%rax, %rdx
-	leaq	208+get_word(%rip), %rax
-	movl	(%rdx,%rax), %ebx
-	movl	$32, %edx
-	leaq	fout(%rip), %rcx
-	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c
-	movl	%ebx, %edx
-	movq	%rax, %rcx
-	call	_ZNSolsEi
-.L27:
 	addl	$1, -92(%rbp)
-	jmp	.L28
+	jmp	.L27
 .L25:
-	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rdx
-	leaq	fout(%rip), %rcx
-	call	_ZNSolsEPFRSoS_E
 	leaq	fin(%rip), %rcx
 	call	_ZNSt14basic_ifstreamIcSt11char_traitsIcEE5closeEv
 	leaq	fout(%rip), %rcx
 	call	_ZNSt14basic_ofstreamIcSt11char_traitsIcEE5closeEv
 	movl	$0, %eax
-	movaps	-80(%rbp), %xmm6
-	addq	$72, %rsp
+	addq	$56, %rsp
 	popq	%rbx
 	popq	%rbp
 	ret
@@ -616,7 +543,7 @@ main:
 	.def	__tcf_0;	.scl	3;	.type	32;	.endef
 	.seh_proc	__tcf_0
 __tcf_0:
-.LFB2139:
+.LFB2133:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -634,7 +561,7 @@ __tcf_0:
 	.def	__tcf_1;	.scl	3;	.type	32;	.endef
 	.seh_proc	__tcf_1
 __tcf_1:
-.LFB2140:
+.LFB2134:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -652,7 +579,7 @@ __tcf_1:
 	.def	__tcf_2;	.scl	3;	.type	32;	.endef
 	.seh_proc	__tcf_2
 __tcf_2:
-.LFB2141:
+.LFB2135:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -670,7 +597,7 @@ __tcf_2:
 	.def	_Z41__static_initialization_and_destruction_0ii;	.scl	3;	.type	32;	.endef
 	.seh_proc	_Z41__static_initialization_and_destruction_0ii
 _Z41__static_initialization_and_destruction_0ii:
-.LFB2138:
+.LFB2132:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	pushq	%rsi
@@ -685,9 +612,9 @@ _Z41__static_initialization_and_destruction_0ii:
 	movl	%ecx, 32(%rbp)
 	movl	%edx, 40(%rbp)
 	cmpl	$1, 32(%rbp)
-	jne	.L37
+	jne	.L36
 	cmpl	$65535, 40(%rbp)
-	jne	.L37
+	jne	.L36
 	leaq	_ZStL8__ioinit(%rip), %rcx
 	call	_ZNSt8ios_base4InitC1Ev
 	leaq	__tcf_0(%rip), %rcx
@@ -703,9 +630,9 @@ _Z41__static_initialization_and_destruction_0ii:
 	leaq	get_word(%rip), %rax
 	movl	$132999, %ebx
 	movq	%rax, %rsi
-.L36:
+.L35:
 	testq	%rbx, %rbx
-	js	.L37
+	js	.L36
 	movl	$0, %r9d
 	movsd	.LC4(%rip), %xmm2
 	movl	$0, %edx
@@ -713,8 +640,8 @@ _Z41__static_initialization_and_destruction_0ii:
 	call	_ZN4WordC1EPKcdi
 	addq	$216, %rsi
 	subq	$1, %rbx
-	jmp	.L36
-.L37:
+	jmp	.L35
+.L36:
 	nop
 	addq	$32, %rsp
 	popq	%rbx
@@ -725,7 +652,7 @@ _Z41__static_initialization_and_destruction_0ii:
 	.def	_GLOBAL__sub_I_fin;	.scl	3;	.type	32;	.endef
 	.seh_proc	_GLOBAL__sub_I_fin
 _GLOBAL__sub_I_fin:
-.LFB2150:
+.LFB2144:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -763,9 +690,6 @@ _GLOBAL__sub_I_fin:
 	.def	_ZNSirsERi;	.scl	2;	.type	32;	.endef
 	.def	_ZN4WordeqERKS_;	.scl	2;	.type	32;	.endef
 	.def	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c;	.scl	2;	.type	32;	.endef
-	.def	_ZNSolsEd;	.scl	2;	.type	32;	.endef
-	.def	_ZNSolsEi;	.scl	2;	.type	32;	.endef
-	.def	_ZNSolsEPFRSoS_E;	.scl	2;	.type	32;	.endef
 	.def	_ZNSt14basic_ifstreamIcSt11char_traitsIcEE5closeEv;	.scl	2;	.type	32;	.endef
 	.def	_ZNSt14basic_ofstreamIcSt11char_traitsIcEE5closeEv;	.scl	2;	.type	32;	.endef
 	.def	_ZNSt8ios_base4InitD1Ev;	.scl	2;	.type	32;	.endef
@@ -776,11 +700,6 @@ _GLOBAL__sub_I_fin:
 	.def	_ZNSt14basic_ifstreamIcSt11char_traitsIcEEC1Ev;	.scl	2;	.type	32;	.endef
 	.def	_ZNSt14basic_ofstreamIcSt11char_traitsIcEEC1Ev;	.scl	2;	.type	32;	.endef
 	.def	_ZN4WordC1EPKcdi;	.scl	2;	.type	32;	.endef
-	.section	.rdata$.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, "dr"
-	.globl	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
-	.linkonce	discard
-.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_:
-	.quad	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
 	.section	.rdata$.refptr._ZSt4cout, "dr"
 	.globl	.refptr._ZSt4cout
 	.linkonce	discard
